@@ -133,7 +133,7 @@
             </td>
             <td class="column-description desc">
                 <div class="plugin-description">
-                    <p>Abilita un nuovo sistema di catalogazione delle informazioni basato su destinatari (alunni, genitori, ATA, docenti). Attualmente in <strong>beta</strong>. Documentazione in fase di sviluppo</p>
+                    <p>Abilita un nuovo sistema di catalogazione delle informazioni basato su destinatari (studenti, famiglie, ATA, docenti). Attualmente in <strong>beta</strong>. Documentazione in fase di sviluppo</p>
                 </div>
             </td>
         </tr>
