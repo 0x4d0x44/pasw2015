@@ -40,7 +40,7 @@
 
 function pasw_generate_dest_terms() {
 
-    $destinatari = array('Docenti', 'Alunni', 'Genitori', 'Personale ATA');
+    $destinatari = array('Docenti', 'Studenti', 'Famiglie', 'Personale ATA');
 
     for ($i=0; $i<4; $i++) {
          if (!term_exists( $destinatari[$i], 'paswdestinatari')) {
