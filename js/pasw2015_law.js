@@ -26,8 +26,8 @@
 	if (positionrevocalr == 1) {positionrevocalr = 'right:10px;';} else {positionrevocalr = 'left:10px;';}
 	if (positionrevocatb == 1) {positionrevocatb = 'top:25px;';} else {positionrevocatb = 'bottom:25px;';}
 	
-	if(!_checkCookie(cookieName)) {$('body').prepend('<div class="pasw2015cookies" style="display: block;'+ styleposition +'"><div class="pasw2015cookies-cookie-pop" style="background: none repeat scroll 0 0 '+ bgbanner +' ;"><div class="pasw2015cookies-banner-text" style="color:'+ textcolor +'">'+ bannerText + cookiePolicyLink +'&nbsp;&nbsp;<button id="accept-cookie">' + buttonText + '</button></div> </div></div>');$( '#accept-cookie' ).click(function () {_laweuAccept(cookieName);});}
-	if ( _checkCookie(cookieName) && show == 1 ) {$('body').prepend('<a href="#" id="remove-cookie" class="remove-cookie" style="'+ positionrevocalr + positionrevocatb +'">Revoca Consenso<br>Cookie</a>');}
+	if(!_checkCookie(cookieName)) {$('body').append('<div class="pasw2015cookies" style="display: block;'+ styleposition +'"><div class="pasw2015cookies-cookie-pop" style="background: none repeat scroll 0 0 '+ bgbanner +' ;"><div class="pasw2015cookies-banner-text" style="color:'+ textcolor +'">'+ bannerText + cookiePolicyLink +'&nbsp;&nbsp;<button id="accept-cookie">' + buttonText + '</button></div> </div></div>');$( '#accept-cookie' ).click(function () {_laweuAccept(cookieName);});}
+	if ( _checkCookie(cookieName) && show == 1 ) {$('body').append('<a href="#" id="remove-cookie" class="remove-cookie" style="'+ positionrevocalr + positionrevocatb +'">Revoca Consenso<br>Cookie</a>');}
 
 	$( '#remove-cookie' ).click(function () { _laweuRemove(cookieName); });
 	$( '#remove-cookie-short' ).click(function () { _laweuRemove(cookieName); });
